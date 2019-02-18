@@ -104,9 +104,9 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
     reporters: [
-        'dot',
+        'spec',
         ['junit', {
-        outputDir: './'
+        outputDir: './reports/'
         }]
       ],
     //
@@ -115,7 +115,7 @@ exports.config = {
     mochaOpts: {
         ui: 'bdd',
         timeout: 60000
-    },
+    }
     //
     // =====
     // Hooks
