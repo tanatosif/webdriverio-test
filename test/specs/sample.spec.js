@@ -1,12 +1,13 @@
-var assert = require('assert');
+'use strict';
+
 const chai = require('chai');
 const expect = chai.expect;
 
 describe('Demo tests', function() {
     it('should have the right title - the fancy generator way', function () {
         browser.url('http://webdriver.io');
-        var title = browser.getTitle();
-        assert.equal(title, 'WebdriverIO · Next-gen WebDriver test framework for Node.js');
+        const title = browser.getTitle();
+        expect(title).to.equal('WebdriverIO · Next-gen WebDriver test framework for Node.js')
     });
 
     it('Should found the Easter Egg on Google search results page', function () {

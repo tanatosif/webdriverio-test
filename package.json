@@ -5,6 +5,7 @@
   "main": "test.js",
   "dependencies": {
     "chai": "^4.2.0",
+    "request": "^2.88.0",
     "webdriverio": "^5.4.17"
   },
   "devDependencies": {
@@ -20,7 +21,8 @@
     "wdio-junit-reporter": "^0.4.4"
   },
   "scripts": {
-    "test": "./node_modules/.bin/wdio wdio.conf.js"
+    "test": "./node_modules/.bin/wdio wdio.conf.js",
+    "test:single": "./node_modules/.bin/wdio wdio.conf.js --spec ./test/specs/sampleRequest.spec.js"
   },
   "author": "",
   "license": "ISC"
